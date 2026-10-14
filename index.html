@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consultant Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="demoBanner" hidden>
+    Mode démo : les données sont enregistrées dans votre navigateur uniquement.
+    <button id="demoReset" type="button">Réinitialiser la démo</button>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="#/dashboard"><span class="logo">C</span> Consultant Hub</a>
+    <nav id="nav">
+      <a href="#/dashboard" data-route="dashboard">Tableau de bord</a>
+      <a href="#/consultants" data-route="consultants">CVthèque</a>
+      <a href="#/missions" data-route="missions">Missions</a>
+      <a href="#/cra" data-route="cra">CRA</a>
+    </nav>
+    <div class="month-picker" id="monthPicker" hidden>
+      <button class="icon-btn" id="prevMonth" aria-label="Mois précédent">‹</button>
+      <span id="monthLabel"></span>
+      <button class="icon-btn" id="nextMonth" aria-label="Mois suivant">›</button>
+    </div>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="demo-api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

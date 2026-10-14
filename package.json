@@ -1,0 +1,12 @@
+{
+  "name": "consultant-hub",
+  "version": "1.0.0",
+  "description": "Gestion de consultants (CVthèque, missions, CRA) pour ESN",
+  "main": "server/index.js",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "dev": "node --watch server/index.js"
+  }
+}
